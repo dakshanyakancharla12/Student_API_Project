@@ -1,0 +1,21 @@
+CREATE DATABASE student_db;
+USE student_db;
+
+CREATE TABLE students (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    course VARCHAR(100),
+    age INT
+);
+
+INSERT INTO students (name, email, course, age)
+VALUES
+('Rahul', 'rahul@gmail.com', 'Java', 22),
+('Priya', 'priya@gmail.com', 'Python', 21),
+('Arun', 'arun@gmail.com', 'Spring Boot', 23);
+
+
+To Run:-
+
+http://localhost:8080/api/students
